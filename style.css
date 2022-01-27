@@ -1,0 +1,44 @@
+@charset "utf-8";
+body {
+	background-color: #ffffff; 
+	background-position: center;
+	background-size: 230px;
+	background-repeat:  no-repeat;
+}
+
+h1{
+	font-family: 'Shippori Mincho B1', serif;
+	font-family: 'Zen Kaku Gothic Antique', sans-serif;
+	font-family: 'Zen Old Mincho', serif;
+	text-align: center;
+}
+
+h2,p {
+	font-family: 'Zen Kaku Gothic Antique', sans-serif;
+	font-weight: bold;
+	line-height: 1.7;
+	text-align: center;
+}
+
+div {
+	text-align: center;
+}
+
+.start {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.start p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 280px;
+}
