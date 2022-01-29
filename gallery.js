@@ -58,3 +58,47 @@ window.addEventListener('DOMContentLoaded', function(){
 				}
 			});
 		});
+
+window.addEventListener('DOMContentLoaded', function(){
+
+			document.getElementById('link_page_about').style.visibility = 'hidden';
+
+			document.getElementById('link_page_about').addEventListener('transitionend', function(){
+
+				if( document.getElementById('link_page_about').className !== 'view' ) {
+					document.getElementById('link_page_about').style.visibility = 'hidden';
+				}
+			});
+
+			window.addEventListener('scroll', function(){
+				if( 200 < window.scrollY ) {
+					document.getElementById('link_page_about').style.visibility = 'visible';
+					document.getElementById('link_page_about').classList.add('view');
+
+				} else {
+					document.getElementById('link_page_about').classList.remove('view');
+				}
+			});
+		});
+
+window.addEventListener('DOMContentLoaded', function(){
+
+			document.getElementById('link_page_sita').style.visibility = 'hidden';
+
+			document.getElementById('link_page_stia').addEventListener('transitionend', function(){
+
+				if( document.getElementById('link_page_sita').className !== 'view' ) {
+					document.getElementById('link_page_sita').style.visibility = 'hidden';
+				}
+			});
+
+			window.addEventListener('scroll', function(){
+				if( 200 < window.scrollY ) {
+					document.getElementById('link_page_sita').style.visibility = 'visible';
+					document.getElementById('link_page_sita').classList.add('view');
+
+				} else {
+					document.getElementById('link_page_sita').classList.remove('view');
+				}
+			});
+		});
