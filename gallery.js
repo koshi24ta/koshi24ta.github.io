@@ -1,4 +1,3 @@
-console.log('Hello');
 $(function() {
 	setTimeout(function(){
 		$('.start p').fadeIn(1600);
@@ -9,7 +8,6 @@ $(function() {
 });
 
 const showScroll = function () {
-
     const element = document.querySelectorAll( '.fadeinElem' ),
           windowH = window.innerHeight;
 
@@ -25,14 +23,14 @@ const showScroll = function () {
                 elementY = element[ args ].getBoundingClientRect().top + nowY;
                 if ( nowY > elementY - ( windowH / divisor ) ) {
                     element[ args ].classList.add( 'show' );
-                } else {
+                } 
+				else {
                     element[ args ].classList.remove( 'show' );
                 }
             } ) ( count );
             count++;
         }
     }, false );
-
 };
 
 showScroll();
@@ -102,3 +100,15 @@ window.addEventListener('DOMContentLoaded', function(){
 				}
 			});
 		});
+
+$(function() {
+    $('.hamburger').click(function() {
+        $(this).toggleClass('active');
+ 
+        if ($(this).hasClass('active')) {
+            $('.globalMenuSp').addClass('active');
+        } else {
+            $('.globalMenuSp').removeClass('active');
+        }
+    });
+});
