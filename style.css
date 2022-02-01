@@ -42,3 +42,13 @@ div {
 	z-index: 9999;
 	width: 280px;
 }
+
+@media (max-width: 600px) {
+	.doa {
+		text-align: center;
+	}
+	
+	footer {
+		text-align: center;
+	}
+}
